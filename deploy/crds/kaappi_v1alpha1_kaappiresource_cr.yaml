@@ -1,0 +1,7 @@
+apiVersion: kaappi.dev/v1alpha1
+kind: KaappiResource
+metadata:
+  name: example-kaappiresource
+spec:
+  # Add fields here
+  size: 3
