@@ -7,7 +7,7 @@
 .PHONY: help
 help: ## Credit: https://gist.github.com/prwhite/8168133#gistcomment-2749866
 
-	@printf "Makefile targets usage:\n";
+	@printf "Usage:\n  make <target>";
 
 	@awk '{ \
 			if ($$0 ~ /^.PHONY: [a-zA-Z\-\_0-9]+$$/) { \
