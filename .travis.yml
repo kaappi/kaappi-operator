@@ -26,6 +26,7 @@ before_script:
 - "sudo chown -R travis: /home/travis/.minikube/"
 - go get github.com/alecthomas/gometalinter
 - gometalinter --install
+- go get github.com/operator-framework/operator-sdk/...
 
 script:
 # Following is just to demo that the kubernetes cluster works.
