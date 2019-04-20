@@ -44,11 +44,7 @@ help: ## Credit: https://gist.github.com/prwhite/8168133#gistcomment-2749866
 ## Run linters
 .PHONY: lint
 lint:
-	gometalinter $(shell go list ./...) --deadline=2m  --disable-all --enable=errcheck --enable=ineffassign \
-	--enable=gofmt --enable=vet --enable=deadcode --enable=varcheck \
-	--enable=structcheck --enable=maligned --enable=unconvert \
-	--enable=goconst --enable=gosec --enable=unparam --enable=staticcheck \
-	--enable=interfacer --enable=vetshadow --enable=golint
+	golangci-lint run --deadline=10m
 
 ## Run unit tests
 .PHONY: test
